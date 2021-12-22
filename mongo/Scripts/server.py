@@ -1,5 +1,4 @@
 from flask import Flask, Response, request
-
 import pymongo
 import json
 from bson.objectid import ObjectId
@@ -12,7 +11,7 @@ try:
     mongo.server_info()
 except:
     print("ERROR -Cannot connect to database")
-#####
+
 
 
 @app.route("/users", methods=["GET"])
